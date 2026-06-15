@@ -1,8 +1,8 @@
 # CarryScope: how we compute carry (the honest number)
 
 This is the exact, reproducible method behind the free **"is crypto carry worth it right now?"** number at
-CarryScope. It's deliberately boring and fully open, because a number you can't reproduce isn't worth
-trusting.
+CarryScope (live tool: **https://carryscope.com**). It's deliberately boring and fully open, because a
+number you can't reproduce isn't worth trusting.
 
 > **TL;DR:** crypto dashboards show **gross** funding APY. This script subtracts the costs they leave out
 > and tells you the **net** number. Right now, on BTC/ETH, that number sits *below the risk-free rate*.
