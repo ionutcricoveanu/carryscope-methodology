@@ -1,11 +1,11 @@
-# CarryScope — how we compute carry (the honest number)
+# CarryScope: how we compute carry (the honest number)
 
 This is the exact, reproducible method behind the free **"is crypto carry worth it right now?"** number at
 CarryScope. It's deliberately boring and fully open, because a number you can't reproduce isn't worth
 trusting.
 
 > **TL;DR:** crypto dashboards show **gross** funding APY. This script subtracts the costs they leave out
-> and tells you the **net** number — and right now, on BTC/ETH, that number sits *below the risk-free rate*.
+> and tells you the **net** number. Right now, on BTC/ETH, that number sits *below the risk-free rate*.
 
 ## The problem with the headline funding rate
 
@@ -35,7 +35,7 @@ No API key, no dependencies beyond the Python standard library. Uses public Bina
 python3 carry.py
 ```
 
-Example output (a dated snapshot — yours will differ):
+Example output (a dated snapshot; yours will differ):
 
 ```
 BTC  (2026-05-16 → 2026-06-15, 90 settlements)
@@ -49,7 +49,7 @@ ETH  (2026-05-16 → 2026-06-15, 90 settlements)
 
 ## What this is honest about
 
-- It shows the metric is **real and computable** — *not* that carry is a good strategy in general. Whether
+- It shows the metric is **real and computable**, *not* that carry is a good strategy in general. Whether
   delta-neutral carry has a durable, risk-adjusted edge across years (and through a bear market) is a
   separate, longer question, and a 30-day snapshot doesn't answer it.
 - The numbers are a **dated illustration** from public data, not a live feed.
@@ -64,4 +64,4 @@ before trading.
 
 ## License
 
-MIT — see [LICENSE](LICENSE). Use it, check it, improve it.
+MIT, see [LICENSE](LICENSE). Use it, check it, improve it.

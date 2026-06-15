@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""CarryScope — net-of-cost crypto carry, computed from public data.
+"""CarryScope: net-of-cost crypto carry, computed from public data.
 
 This is the exact, reproducible method behind the free "is carry worth it right
 now?" number at CarryScope. It is deliberately boring and fully open: a number
@@ -9,8 +9,8 @@ What it computes
 ----------------
 For BTC and ETH it builds a delta-neutral funding-carry book (long spot, short
 the perpetual, rehedged each 8h funding settlement) and reports:
-  - GROSS funding APY  — the headline number the dashboards show
-  - NET-of-cost APY    — after trading fees + the basis half-spread they omit
+  - GROSS funding APY  (the headline number the dashboards show)
+  - NET-of-cost APY    (after trading fees + the basis half-spread they omit)
 and compares the net to a risk-free reference. When net sits below risk-free,
 the carry isn't paying you for the operational risk.
 
@@ -117,7 +117,7 @@ def compute(sym):
 
 
 if __name__ == "__main__":
-    print(f"CarryScope — net-of-cost carry (risk-free reference {RISK_FREE_APY}%)\n")
+    print(f"CarryScope: net-of-cost carry (risk-free reference {RISK_FREE_APY}%)\n")
     for sym, label in SYMBOLS:
         r = compute(sym)
         verdict = "worth a look" if r["worth_it_vs_risk_free"] else "NOT worth it right now"
